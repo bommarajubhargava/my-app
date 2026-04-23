@@ -1,4 +1,3 @@
-cat > src/App.jsx << 'EOF'
 function App() {
   return (
     <div style={{ textAlign: 'center', marginTop: '100px', fontFamily: 'Arial' }}>
@@ -9,4 +8,3 @@ function App() {
 }
 
 export default App
-EOF
