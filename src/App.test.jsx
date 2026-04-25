@@ -16,3 +16,9 @@ test('renders a button that does not exist', () => {
   render(<App />)
   expect(screen.getByRole('button', { name: /submit/i })).toBeInTheDocument()
 })
+
+// ❌ intentionally failing test #2
+test('renders a footer with contact info', () => {
+  render(<App />)
+  expect(screen.getByText(/contact@bhargava.com/i)).toBeInTheDocument()
+})
