@@ -11,8 +11,3 @@ test('renders deployment subtext', () => {
   expect(screen.getByText(/This is my first CI\/CD deployment on AWS/i)).toBeInTheDocument()
 })
 
-// ❌ intentionally failing test - to demonstrate PR block
-test('renders a button that does not exist', () => {
-  render(<App />)
-  expect(screen.getByRole('button', { name: /submit/i })).toBeInTheDocument()
-})
